@@ -1980,7 +1980,7 @@ export default class Select<
 
     if (!name || isDisabled) return;
 
-    if (required && !this.hasValue())
+    if (required && !this.hasValue()) {
       return (
         <RequiredInput
           name={name}
@@ -1988,6 +1988,7 @@ export default class Select<
           requiredMessage={requiredMessage}
         />
       );
+    }
 
     if (isMulti) {
       if (delimiter) {

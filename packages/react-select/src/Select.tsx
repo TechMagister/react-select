@@ -1562,6 +1562,7 @@ export default class Select<
       tabIndex,
       form,
       menuIsOpen,
+      required
     } = this.props;
     const { Input } = this.getComponents();
     const { inputIsHidden, ariaSelection } = this.state;
@@ -1578,6 +1579,7 @@ export default class Select<
       'aria-invalid': this.props['aria-invalid'],
       'aria-label': this.props['aria-label'],
       'aria-labelledby': this.props['aria-labelledby'],
+      'aria-required': required,
       role: 'combobox',
       ...(menuIsOpen && {
         'aria-controls': this.getElementId('listbox'),

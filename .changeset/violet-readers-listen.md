@@ -1,5 +1,5 @@
 ---
-'react-select': minor
+'@tech-magister/react-select': minor
 ---
 
 Add `required` prop
